@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>TestCafe</title>
-    <script async src="/long-loading-script"></script>
     <script>
-        console.log('sript:', Date.now());
+        console.log('first sript:', Date.now());
         window.onload = () => console.log('window loaded:', Date.now());;
     </script>
+    <script async src="/long-loading-script"></script>
 </head>
 <body>
     Hello, TestCafe!
